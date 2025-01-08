@@ -1,0 +1,19 @@
+name: test
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    container: ryuichiueda/ubuntu22.04-ros2:latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Python depencies
+        run: |
+          apt-get update && apt-get install -y python3-pip
+          python3 -m pip install --upgrade pip
+          pip install psutil
+      - name: build and test
+        run: |
+          rsync -av ./ /root/ros2_ws/src/mypkg/    
+          cd /root/ros2_ws
+          bash -xv ./src/mypkg/test/test.bash /root
+      
