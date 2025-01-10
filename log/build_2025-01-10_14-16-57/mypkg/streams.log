@@ -1,0 +1,29 @@
+[1.088s] Invoking command in '/home/shibata/ros2_ws/src/mypkg': PYTHONPATH=/home/shibata/ros2_ws/src/mypkg/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/mypkg build --build-base /home/shibata/ros2_ws/src/mypkg/build/mypkg/build install --record /home/shibata/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data
+[1.350s] running egg_info
+[1.350s] writing build/mypkg/mypkg.egg-info/PKG-INFO
+[1.350s] writing dependency_links to build/mypkg/mypkg.egg-info/dependency_links.txt
+[1.350s] writing entry points to build/mypkg/mypkg.egg-info/entry_points.txt
+[1.350s] writing requirements to build/mypkg/mypkg.egg-info/requires.txt
+[1.351s] writing top-level names to build/mypkg/mypkg.egg-info/top_level.txt
+[1.378s] reading manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.380s] writing manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.380s] running build
+[1.380s] running build_py
+[1.380s] running install
+[1.381s] running install_lib
+[1.385s] byte-compiling /home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/cpu_usage.listener.py to cpu_usage.listener.cpython-38.pyc
+[1.386s]   File "/home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/cpu_usage.listener.py", line 20
+[1.386s]     ~
+[1.386s]     ^
+[1.386s] SyntaxError: invalid syntax
+[1.386s] 
+[1.386s] running install_data
+[1.386s] copying package.xml -> /home/shibata/ros2_ws/src/mypkg/install/mypkg/share/mypkg
+[1.387s] running install_egg_info
+[1.388s] removing '/home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info' (and everything under it)
+[1.389s] Copying build/mypkg/mypkg.egg-info to /home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info
+[1.390s] running install_scripts
+[1.402s] Installing cpu_usage script to /home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[1.402s] Installing cpu_usage.listener script to /home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[1.402s] writing list of installed files to '/home/shibata/ros2_ws/src/mypkg/build/mypkg/install.log'
+[1.421s] Invoked command in '/home/shibata/ros2_ws/src/mypkg' returned '0': PYTHONPATH=/home/shibata/ros2_ws/src/mypkg/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/mypkg build --build-base /home/shibata/ros2_ws/src/mypkg/build/mypkg/build install --record /home/shibata/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data

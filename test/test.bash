@@ -1,5 +1,5 @@
 #!/bin/bash -xv
-# SPDX-FileCopyrightText: 2025 Shunsuke Shibata
+#SPDX-FileCopyrightText: 2025 Shunsuke Shibata
 # SPDX-License-Identifier: BSD-3-Clause
 
 dir=~
@@ -8,8 +8,9 @@ dir=~
 cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
-timeout 10 ros2 run mypkg cpu_usage.py > /tmp/mypkg.log
+timeout 75 ros2 launch mypkg cpu_usage.launch | tee - /tmp/mypkg.log
 
-cat /tmp/mypkg.log
+cat /tmp/mypkg.log | 
+grep 'Recieved CPU Usage:'
 
 

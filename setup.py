@@ -23,8 +23,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = mypkg.talker:main',
-            #'listener = mypkg.listerner:main,
+            'cpu_usage = mypkg.cpu_usage:main',
+            'cpu_usage_listener = mypkg.cpu_usage_listener:main'
         ],
     },
 )
