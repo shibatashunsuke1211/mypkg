@@ -1,0 +1,46 @@
+[0.876s] Invoking command in '/home/shibata/ros2_ws/src/mypkg': PYTHONPATH=/home/shibata/ros2_ws/src/mypkg/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/mypkg build --build-base /home/shibata/ros2_ws/src/mypkg/build/mypkg/build install --record /home/shibata/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data
+[1.012s] running egg_info
+[1.012s] creating build/mypkg/mypkg.egg-info
+[1.013s] writing build/mypkg/mypkg.egg-info/PKG-INFO
+[1.013s] writing dependency_links to build/mypkg/mypkg.egg-info/dependency_links.txt
+[1.013s] writing entry points to build/mypkg/mypkg.egg-info/entry_points.txt
+[1.013s] writing requirements to build/mypkg/mypkg.egg-info/requires.txt
+[1.014s] writing top-level names to build/mypkg/mypkg.egg-info/top_level.txt
+[1.016s] writing manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.038s] reading manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.038s] writing manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.038s] running build
+[1.039s] running build_py
+[1.039s] creating /home/shibata/ros2_ws/src/mypkg/build/mypkg/build
+[1.040s] creating /home/shibata/ros2_ws/src/mypkg/build/mypkg/build/lib
+[1.040s] creating /home/shibata/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.040s] copying mypkg/cpu_usage.listener.py -> /home/shibata/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.041s] copying mypkg/__init__.py -> /home/shibata/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.041s] copying mypkg/cpu_usage.py -> /home/shibata/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.051s] running install
+[1.051s] running install_lib
+[1.052s] creating /home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.052s] copying /home/shibata/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/cpu_usage.listener.py -> /home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.053s] copying /home/shibata/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/__init__.py -> /home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.053s] copying /home/shibata/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/cpu_usage.py -> /home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.053s] byte-compiling /home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/cpu_usage.listener.py to cpu_usage.listener.cpython-38.pyc
+[1.054s]   File "/home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/cpu_usage.listener.py", line 20
+[1.054s]     ~
+[1.055s]     ^
+[1.055s] SyntaxError: invalid syntax
+[1.055s] 
+[1.055s] byte-compiling /home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/__init__.py to __init__.cpython-38.pyc
+[1.055s] byte-compiling /home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/cpu_usage.py to cpu_usage.cpython-38.pyc
+[1.055s] running install_data
+[1.055s] creating /home/shibata/ros2_ws/src/mypkg/install/mypkg/share/ament_index
+[1.056s] creating /home/shibata/ros2_ws/src/mypkg/install/mypkg/share/ament_index/resource_index
+[1.056s] creating /home/shibata/ros2_ws/src/mypkg/install/mypkg/share/ament_index/resource_index/packages
+[1.056s] copying resource/mypkg -> /home/shibata/ros2_ws/src/mypkg/install/mypkg/share/ament_index/resource_index/packages
+[1.056s] copying package.xml -> /home/shibata/ros2_ws/src/mypkg/install/mypkg/share/mypkg
+[1.057s] copying launch/cpu_usage.launch.py -> /home/shibata/ros2_ws/src/mypkg/install/mypkg/share/mypkg
+[1.057s] running install_egg_info
+[1.058s] Copying build/mypkg/mypkg.egg-info to /home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info
+[1.059s] running install_scripts
+[1.073s] Installing talker script to /home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[1.074s] writing list of installed files to '/home/shibata/ros2_ws/src/mypkg/build/mypkg/install.log'
+[1.091s] Invoked command in '/home/shibata/ros2_ws/src/mypkg' returned '0': PYTHONPATH=/home/shibata/ros2_ws/src/mypkg/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shibata/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/mypkg build --build-base /home/shibata/ros2_ws/src/mypkg/build/mypkg/build install --record /home/shibata/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data
