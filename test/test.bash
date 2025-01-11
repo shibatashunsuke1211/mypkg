@@ -11,6 +11,6 @@ source $dir/.bashrc
 timeout 75 ros2 launch mypkg cpu_usage.launch | tee - /tmp/mypkg.log
 
 cat /tmp/mypkg.log | 
-grep 'Recieved CPU Usage:'
+grep 'CPU Usage:'
 
 
