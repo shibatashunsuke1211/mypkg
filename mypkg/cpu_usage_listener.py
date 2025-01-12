@@ -9,12 +9,7 @@ class CpuUsageSubscriber(Node):
     def __init__(self):
         super().__init__("cpu_usage_subscriber")
 
-        self.subscription = self.create_subscription(
-            Float32,
-            "cpu_usage",
-            self.cb,
-            10
-        )
+        self.subscription = self.create_subscription(Float32,"cpu_usage",self.cb,10)
 
     def cb(self, msg):
         # ロギング機能を使用してCPU使用率を表示
