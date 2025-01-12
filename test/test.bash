@@ -16,7 +16,7 @@ source $dir/.bashrc
 timeout 10 ros2 run mypkg cpu_usage_listener | tee /tmp/mypkg.log
 
 # ログの内容を確認
-cat /tmp/mypkg.log | grep -E 'Received CPU Usage: [0-9]+'
+cat /tmp/mypkg.log | grep -E 'Received CPU Usage: [0-9]+(\.[0-9]+)?%'
 
 
 
