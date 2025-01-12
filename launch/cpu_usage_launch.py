@@ -18,4 +18,4 @@ def generate_launch_description():
             output = 'screen'
             )
 
-    return launch.LaunchDescription([cpu_usage,cpu_usage_listener])
+    return launch.LaunchDescription([cpu_usage, cpu_usage_listener])
