@@ -13,10 +13,10 @@ colcon build
 source $dir/.bashrc
 
 # ノードを直接実行して、CPU使用率をパブリッシュする
-timeout 75 ros2 run mypkg cpu_usage_listener | tee /tmp/mypkg.log
+timeout 10 ros2 run mypkg cpu_usage_listener | tee /tmp/mypkg.log
 
 # ログの内容を確認
-cat /tmp/mypkg.log | grep -E 'CPU Usage: [0-9]+'
+cat /tmp/mypkg.log | grep -E 'Received CPU Usage: [0-9]+'
 
 
 
