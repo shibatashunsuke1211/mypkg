@@ -14,8 +14,8 @@ def generate_launch_description():
 
     listener_cpu_usage　= launch_ros.actions.Node(
             package = 'mypkg',
-            executable = 'cpu_usage.listener',
+            executable = 'cpu_usage_listener',
             output = 'screen'
             )
 
-    return launch.LaunchDescription([check_cpu_stats, listener_cpu_stats])
+    return launch.LaunchDescription([cpu_usage,cpu_usage_listener ])
