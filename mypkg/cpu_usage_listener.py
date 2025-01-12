@@ -1,16 +1,13 @@
 # SPDX-FileCopyrightText: 2025 Shunsuke Shibata
 # SPDX-License-Identifier: BSD-3-Clause
 
-# SPDX-FileCopyrightText: 2025 Shunsuke Shibata
-# SPDX-License-Identifier: BSD-3-Clause
-
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Float32  # CPU使用率を小数でパブリッシュするためにFloat32を使用
+from std_msgs.msg import Float32
 
 class CpuUsageSubscriber(Node):
     def __init__(self):
-        super().__init__("cpu_usage_subscriber")  # ノード名を訂正
+        super().__init__("cpu_usage_subscriber")
 
         self.subscription = self.create_subscription(
             Float32,
@@ -20,6 +17,7 @@ class CpuUsageSubscriber(Node):
         )
 
     def cb(self, msg):
+        # ロギング機能を使用してCPU使用率を表示
         self.get_logger().info(f"Received CPU Usage: {msg.data}%")
 
 def main():
